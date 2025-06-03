@@ -1,0 +1,85 @@
+/* Menghapus efek blur dari body dan memastikan background terpisah */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Latar belakang yang akan diblur */
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../aset/background/wp9277522.jpg"); /* Ganti dengan path gambar Anda */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Efek blur pada latar belakang */
+  z-index: -1; /* Agar tetap di bawah konten utama */
+}
+
+/* Styling form container */
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgb(255, 251, 243); /* Latar belakang putih transparan */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.266);
+  text-align: center;
+  z-index: 2;
+}
+
+.register-container img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.form-control {
+  padding-left: 40px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.btn-primary {
+  background-color: #7b1e00;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #7b1e00;
+}
+
+.link-login {
+  margin-top: 20px;
+  font-size: 14px;
+}
